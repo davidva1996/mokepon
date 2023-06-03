@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Noto+Serif&display=swap');
+
+body {
+
+    background-image: url(./img/fondo_1.jpg);
+    font-family: 'Bruno Ace SC', 'Noto Serif';
+    
+    
+}
+.titulo {
+
+    color: white;
+    font-size: 60px;
+
+}
+
+.subtitulo {
+
+    color: white;
+    padding-top: 10px 0px 10px 0px;
+    font-size: 32px;
+} 
+
+#seleccionar-mascota {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon {
+width: 146px;
+height: 160px;
+background: wheat;
+padding: 10px;
+box-sizing: border-box;
+margin: 6px;
+border: 2px solid black;
+border-radius: 20px;
+/* display: flex; */
+text-align: center;
+}
+
+.tarjeta-de-mokepon img {
+
+    width: 90px;
+}
+
+#boton-mascota {
+
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family:'Noto Serif';
+    margin: 30px;
+}
+
+#boton-mascota:hover {
+
+    background-color: rgb(149, 157, 229);
+    cursor: pointer;
+
+
+}
+
+.tarjetas, .botones-ataque {
+    display: flex;
+    gap: 10px;
+}
+
+input{
+
+    display: none;
+}
+
+input:checked + label {
+
+    background-color: rgb(149, 157, 229);
+}
+
+input:hover + label {
+
+    background-color:  rgb(149, 157, 229);
+    cursor: pointer;
+}
+
+#seleccionar-ataque {
+
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+
+    background: #C7D3F3;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 150px;
+    border-color: transparent;
+    font-family: 'Bruno Ace SC';
+    
+}
+
+.boton-de-ataque:hover{
+
+    background-color:  rgb(149, 157, 229);
+    cursor: pointer;
+}
+
+#mensajes {
+
+    width: 280px;
+    background: #C7D3F3;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar{
+
+box-sizing: border-box;
+padding: 10px;
+border-radius: 20px;
+font-family:'Noto Serif';
+background:#24db24;
+}
+
+#boton-reiniciar:hover {
+
+    background-color:  rgb(176, 235, 191);
+    cursor: pointer;
+
+}
+
+
+.ataques {
+    
+    display: grid;
+    grid-template-columns: 130px 100px;
+    color: white;
+    text-align: center;
+  
+
+   
+}
+
+.ataques-jugador, .ataques-enemigo {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#vidas-jugador, #vidas-enemigo {
+
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+
+    .tarjetas{
+        flex-direction: column;
+    }
+
+    .subtitulo {
+
+        text-align: center;
+    }
+
+    .titulo {
+
+        text-align: center;
+    }
+
+    .botones-ataque {
+
+        flex-direction: column;
+        
+    }
+
+
+}
